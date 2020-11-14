@@ -22,16 +22,19 @@ const App = () => {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <label htmlFor="username">Username</label>
-        <input type="text" value={name} onChange={handleInput} id="username" />
+      <div className="container">
+        <h3>Fake Streamlabs Socket API server - Use the remote</h3>
 
-        <button onClick={handleFollow}>Fake un follow</button>
-
-        <button onClick={handleSub}>Fake un sub</button>
-
-        <button onClick={handleRaid}>Fake un raid</button>
-      </header>
+        <div className="form-input">
+          <label htmlFor="username">Username</label>
+          <input type="text" value={name} onChange={handleInput} id="username" />
+        </div>
+        <div className="actions">
+          <button onClick={handleFollow}>Fake un follow</button>
+          <button onClick={handleSub}>Fake un sub</button>
+          <button onClick={handleRaid}>Fake un raid</button>
+        </div>
+      </div>
     </div>
   );
 }
