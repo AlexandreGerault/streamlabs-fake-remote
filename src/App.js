@@ -19,15 +19,15 @@ const App = () => {
   }
 
   const handleOnClickFollow = () => {
-    localSocket.emit('event', followEvent)
+    localSocket.emit('event', followEvent(username))
   }
 
   const handleOnClickSub = () => {
-    localSocket.emit('event', subscriptionEvent)
+    localSocket.emit('event', subscriptionEvent(username))
   }
 
   const handleRaid = () => {
-    localSocket.emit('event', raidEvent)
+    localSocket.emit('event', raidEvent(username))
   }
 
   return (
