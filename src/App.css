@@ -15,7 +15,20 @@
 
 .form-input {
   display: flex;
+  align-items: center;
   gap: 24px;
+}
+
+.form-input input[type="text"] {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #4d525c;
+  border: 2px solid #22252c;
+  border-radius: 5px;
+  color: rgb(217, 219, 248);
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .actions {
@@ -33,4 +46,8 @@
   padding: 16px 24px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.actions button:hover {
+  background: #e47c1a;
 }
